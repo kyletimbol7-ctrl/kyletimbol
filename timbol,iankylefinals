@@ -1,0 +1,653 @@
+# ============================================
+#          PYTHON TUTORIAL PROGRAM
+#       CREATED BY: IAN KYLE G. TIMBOL
+# ============================================
+
+def introduction():
+    print("\n===========================================")
+    print("|| LESSON 1: INTRODUCTION TO PROGRAMMING ||")
+    print("===========================================")
+
+    print("""
+Programming is the process of creating
+instructions that a computer follows.
+
+What is Python?
+Python is a popular programming language
+used to create applications, websites,
+games, and software.
+
+Advantages of Python:
+1. Easy to learn
+2. Simple syntax
+3. Beginner-friendly
+4. Used in many industries
+5. Has many useful libraries
+
+Example:
+""")
+
+    print("Hello, World!")
+    print("\nThis is your first Python program!")
+    
+    print("")
+    #QUIZ 1
+    print("\nSHORT QUIZ!")
+    print("1. What is Programming?")
+    print("A. Giving instructions to a computer")
+    print("B. Playing games on a computer")
+
+    answer = input("\nAnswer : ").upper()
+    if answer == "A":
+        print("Correct!")
+        
+    elif answer == "B":
+        print("Wrong, The correct answer is letter A")
+        
+    else:
+        print("Invalid answer")
+        
+    print("\n2. What is the programming language we are studying?")
+    print("A. Java")
+    print("B. Python")
+    answer = input("\nAnswer : ").upper()
+    if answer == "B":
+        print("Correct!")
+        
+    elif answer == "A":
+        print("Wrong, The correct answer is letter B")
+        
+    else:
+        print("Invalid answer")
+        
+    print("\n3. What is the purpose of a programming language?")
+    print("A.To decorate a computer")
+    print("B.To communicate with a computer")
+    answer = input("\nAnswer : ").upper()
+    if answer == "B":
+        print("Correct!")
+    
+    elif answer == "A":
+        print("Wrong, The answer is letter B")
+        
+    else:
+        print("Invalid answer")
+        
+    
+    
+def basic_syntax():
+    print("\n=========================================")
+    print("||    LESSON 2: PYTHON BASIC SYNTAX    ||")
+    print("=========================================")
+
+    print("""
+Python syntax refers to the rules used
+to write Python programs.
+
+1. Variables
+Variables store information.
+
+Example:
+name = "John"
+age = 18
+
+2. Data Types
+- String: Text
+- Integer: Whole numbers
+- Float: Decimal numbers
+- Boolean: True or False
+
+3. Comments
+Comments are notes in the program.
+Use # to create a comment.
+
+Example:
+""")
+
+    name = "John"
+    age = 18
+    grade = 95.5
+    is_student = True
+
+    print("Name:", name)
+    print("Age:", age)
+    print("Grade:", grade)
+    print("Student:", is_student)
+    
+    print("") 
+    
+    #QUIZ 2
+    
+    print("\nSHORT QUIZ!")
+    print("1. Which symbol is used to write a comment in Python?")
+    print("A. #")
+    print("B. //")
+
+    answer = input("\nAnswer : ").upper()
+    if answer == "A":
+        print("Correct!")
+        
+    elif answer == "B":
+        print("Wrong, The correct answer is letter A")
+        
+    else:
+        print("Invalid answer")
+        
+    print("\n2. Which function is used to display text in Python?")
+    print("A. show()")
+    print("B. print()")
+    answer = input("\nAnswer : ").upper()
+    if answer == "B":
+        print("Correct!")
+        
+    elif answer == "A":
+        print("Wrong, The correct answer is letter B")
+        
+    else:
+        print("Invalid answer")
+        
+    print("\n3.Which of the following is a valid Python variable name?")
+    print("A. my_name")
+    print("B. my-name")
+    answer = input("\nAnswer : ").upper()
+    if answer == "A":
+        print("Correct!")
+    
+    elif answer == "B":
+        print("Wrong, The answer is letter B")
+        
+    else:
+        print("Invalid answer")
+        
+        
+        
+def arithmetic_operators():
+    print("\n=====================================")
+    print("|| LESSON 3: ARITHMETIC OPERATORS  ||")
+    print("=====================================")
+
+    print("""
+Arithmetic operators are used to perform
+mathematical calculations.
+
+Operators:
++ Addition
+- Subtraction
+* Multiplication
+/ Division
+% Modulus
+** Exponentiation
+// Floor Division
+""")
+
+    num1 = float(input("Enter first number: "))
+    num2 = float(input("Enter second number: "))
+
+    print("\nRESULTS:")
+    print("Addition:", num1 + num2)
+    print("Subtraction:", num1 - num2)
+    print("Multiplication:", num1 * num2)
+
+    if num2 != 0:
+        print("Division:", num1 / num2)
+        print("Modulus:", num1 % num2)
+        print("Floor Division:", num1 // num2)
+    else:
+        print("Division, modulus, and floor division by zero are undefined.")
+
+    print("Exponentiation:", num1 ** num2)
+    
+    print("")  
+    
+    #QUIZ 3
+    
+    print("\nSHORT QUIZ!")
+    print("1. Which operator is used for addition in Python?")
+    print("A. *")
+    print("B. +")
+
+    answer = input("\nAnswer : ").upper()
+    if answer == "B":
+        print("Correct!")
+        
+    elif answer == "A":
+        print("Wrong, The correct answer is letter A")
+        
+    else:
+        print("Invalid answer")
+        
+    print("\n2. What is the result of 10 - 5?")
+    print("A. 5")
+    print("B. 15")
+    answer = input("\nAnswer : ").upper()
+    if answer == "A":
+        print("Correct!")
+        
+    elif answer == "B":
+        print("Wrong, The correct answer is letter B")
+        
+    else:
+        print("Invalid answer")
+        
+    print("\n3. Which operator is used for multiplication?")
+    print("A.*")
+    print("B./")
+    answer = input("\nAnswer : ").upper()
+    if answer == "A":
+        print("Correct!")
+    
+    elif answer == "B":
+        print("Wrong, The answer is letter B")
+        
+    else:
+        print("Invalid answer")
+    
+    
+
+def input_output():
+    print("\n======================================")
+    print("|| LESSON 4: BASIC INPUT AND OUTPUT ||")
+    print("======================================")
+
+    print("""
+Input is used to receive information
+from the user.
+
+Output is used to display information.
+
+Python Functions:
+input() - Receives user information.
+print() - Displays information.
+""")
+
+    name = input("Enter your name: ")
+    age = input("Enter your age: ")
+    address = input("Enter your address: ")
+
+    print("\n----- USER INFORMATION -----")
+    print("Name:", name)
+    print("Age:", age)
+    print("Address:", address)
+
+    print("\nWelcome to Python,", name + "!")
+
+    print("") 
+    
+    #QUIZ 4
+    
+    print("\nSHORT QUIZ!")
+    print("1. Which function is used to get input from the user?")
+    print("A. input()")
+    print("B. print()")
+
+    answer = input("\nAnswer : ").upper()
+    if answer == "A":
+        print("Correct!")
+        
+    elif answer == "B":
+        print("Wrong, The correct answer is letter A")
+        
+    else:
+        print("Invalid answer")
+        
+    print("\n2. Which function displays information on the screen?")
+    print("A. input()")
+    print("B. print()")
+    answer = input("\nAnswer : ").upper()
+    if answer == "B":
+        print("Correct!")
+        
+    elif answer == "A":
+        print("Wrong, The correct answer is letter B")
+        
+    else:
+        print("Invalid answer")
+        
+    print("\n3. What will this code display","print(Hello World)")
+    print("A. Hello World")
+    print("B. input")
+    answer = input("\nAnswer : ").upper()
+    if answer == "A":
+        print("Correct!")
+    
+    elif answer == "B": 
+        print("Wrong, The answer is letter B")
+        
+    else:
+        print("Invalid answer")
+
+
+
+
+def conditional_statements():
+    print("\n======================================")
+    print("|| LESSON 5: CONDITIONAL STATEMENTS ||")
+    print("======================================")
+
+    print("""
+Conditional statements allow a program
+to make decisions.
+
+Types:
+1. if statement
+2. if-else statement
+3. if-elif-else statement
+
+Example:
+""")
+
+    age = int(input("Enter your age: "))
+
+    if age >= 18:
+        print("You are an adult.")
+    else:
+        print("You are a minor.")
+
+    print("\nGrade Evaluation")
+
+    grade = float(input("Enter your grade: "))
+
+    if grade >= 90:
+        print("Excellent!")
+    elif grade >= 85:
+        print("Very Good!")
+    elif grade >= 75:
+        print("Passed!")
+    else:
+        print("Needs Improvement.")
+
+    print("")  
+    
+    #QUIZ 5
+    
+    print("\nSHORT QUIZ!")
+    print("1. Which keyword is used to check a condition in Python?")
+    print("A. if")
+    print("B. print")
+
+    answer = input("\nAnswer : ").upper()
+    if answer == "A":
+        print("Correct!")
+        
+    elif answer == "B":
+        print("Wrong, The correct answer is letter A")
+        
+    else:
+        print("Invalid answer")
+        
+    print("\n2. What keyword is used when the first condition is false?")
+    print("A. else")
+    print("B. input")
+    answer = input("\nAnswer : ").upper()
+    if answer == "B":
+        print("Correct!")
+        
+    elif answer == "A":
+        print("Wrong, The correct answer is letter B")
+        
+    else:
+        print("Invalid answer")
+        
+    print("\n3. What is the purpose of an if-else statement?")
+    print("A.To repeat a command")
+    print("B.To make decisions")
+    answer = input("\nAnswer : ").upper()
+    if answer == "B":
+        print("Correct!")
+    
+    elif answer == "A":
+        print("Wrong, The answer is letter B")
+        
+    else:
+        print("Invalid answer")
+
+
+
+def logical_operators():
+    print("\n=======================================")
+    print("||    LESSON 6: LOGICAL OPERATORS    ||")
+    print("=======================================")
+
+    print("""
+Logical operators are used to combine
+or reverse conditions.
+
+Types:
+AND - Both conditions must be True.
+OR  - At least one condition must be True.
+NOT - Reverses the condition.
+
+Example:
+""")
+
+    age = int(input("Enter your age: "))
+    has_id = input("Do you have an ID? (yes/no): ").lower()
+
+    if age >= 18 and has_id == "yes":
+        print("You meet both requirements.")
+    else:
+        print("You do not meet both requirements.")
+
+    print("\nOR OPERATOR EXAMPLE")
+
+    if age < 13 or age > 60:
+        print("You belong to one of the specified age groups.")
+    else:
+        print("You are between 13 and 60.")
+
+    print("\nNOT OPERATOR EXAMPLE")
+
+    is_student = True
+
+    if not is_student:
+        print("You are not a student.")
+    else:
+        print("You are a student.")
+
+    print("")  
+    
+    #QUIZ 6
+    
+    print("\nSHORT QUIZ!")
+    print("1. Which logical operator means both conditions must be true?")
+    print("A. and")
+    print("B. or")
+
+    answer = input("\nAnswer : ").upper()
+    if answer == "A":
+        print("Correct!")
+        
+    elif answer == "B":
+        print("Wrong, The correct answer is letter A")
+        
+    else:
+        print("Invalid answer")
+        
+    print("\n2. Which logical operator means at least one condition must be true?")
+    print("A. not")
+    print("B. or")
+    answer = input("\nAnswer : ").upper()
+    if answer == "B":
+        print("Correct!")
+        
+    elif answer == "A":
+        print("Wrong, The correct answer is letter B")
+        
+    else:
+        print("Invalid answer")
+        
+    print("\n3. What does the not operator do?")
+    print("A.A. Reverses a condition")
+    print("B.To Adds two numbers")
+    answer = input("\nAnswer : ").upper()
+    if answer == "A":
+        print("Correct!")
+    
+    elif answer == "B":
+        print("Wrong, The answer is letter B")
+        
+    else:
+        print("Invalid answer")
+
+
+
+def iteration_loops():
+    print("\n=====================================")
+    print("|| LESSON 7: INTRODUCTION TO LOOPS ||")
+    print("=====================================")
+
+    print("""
+Loops are used to repeat instructions
+multiple times.
+
+Types of Loops:
+
+1. FOR LOOP
+Repeats a block of code a specific
+number of times.
+
+2. WHILE LOOP
+Repeats a block of code while a
+condition is True.
+
+3. BREAK
+Stops the loop.
+
+4. CONTINUE
+Skips the current iteration.
+""")
+
+    print("\nFOR LOOP EXAMPLE")
+
+    for number in range(1, 6):
+        print("Number:", number)
+
+    print("\nWHILE LOOP EXAMPLE")
+
+    count = 1
+
+    while count <= 5:
+        print("Count:", count)
+        count += 1
+
+    print("\nBREAK STATEMENT EXAMPLE")
+
+    for number in range(1, 6):
+        if number == 4:
+            break
+        print(number)
+
+    print("\nCONTINUE STATEMENT EXAMPLE")
+
+    for number in range(1, 6):
+        if number == 3:
+            continue
+        print(number)
+
+    
+    print("")  
+    
+    #QUIZ 7
+    
+    print("\nSHORT QUIZ!")
+    print("1. What is the purpose of a loop in Python?")
+    print("A. To repeat instructions")
+    print("B. To delete a program")
+
+    answer = input("\nAnswer : ").upper()
+    if answer == "A":
+        print("Correct!")
+        
+    elif answer == "B":
+        print("Wrong, The correct answer is letter A")
+        
+    else:
+        print("Invalid answer")
+        
+    print("\n2. Which loop is commonly used to repeat code a specific number of times?")
+    print("A. if loop")
+    print("B. for loop")
+    answer = input("\nAnswer : ").upper()
+    if answer == "B":
+        print("Correct!")
+        
+    elif answer == "A":
+        print("Wrong, The correct answer is letter B")
+        
+    else:
+        print("Invalid answer")
+        
+    print("\n3. Which keyword is used to create a loop that continues while a condition is true?")
+    print("A. while")
+    print("B. ")
+    answer = input("\nAnswer : ").upper()
+    if answer == "A":
+        print("Correct!")
+    
+    elif answer == "B":
+        print("Wrong, The answer is letter B")
+        
+    else:
+        print("Invalid answer")
+    
+    
+    
+# ============================================
+#              MAIN MENU
+# ============================================
+
+def main_menu():
+
+    while True:
+
+        print("\n")
+        print("============================================")
+        print("||        PYTHON TUTORIAL PROGRAM         ||")
+        print("============================================")
+        print("PRESS [1] Introduction to Programming")
+        print("PRESS [2] Python Basic Syntax")
+        print("PRESS [3] Arithmetic Operators and Expressions")
+        print("PRESS [4] Basic Input and Output in Python")
+        print("PRESS [5] Conditional Statements in Python")
+        print("PRESS [6] Logical Operators")
+        print("PRESS [7] Introduction to Iteration and Loops")
+        print("PRESS [8] Exit Program")
+        print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+
+        choice = input("Choose your lesson (1-8): ")
+
+        if choice == "1":
+            introduction()
+
+        elif choice == "2":
+            basic_syntax()
+
+        elif choice == "3":
+            arithmetic_operators()
+
+        elif choice == "4":
+            input_output()
+
+        elif choice == "5":
+            conditional_statements()
+
+        elif choice == "6":
+            logical_operators()
+
+        elif choice == "7":
+            iteration_loops()
+        
+        elif choice == "8":
+            print("\nThank you for using")
+            print("this Python Tutorial Program!")
+            break
+
+        else:
+            print("\nInvalid choice!")
+            print("Please select a number from 1 to 8.")
+
+        input("\nPress ENTER to return to the Main Menu...")
+
+
+
+main_menu()
